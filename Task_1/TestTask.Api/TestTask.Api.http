@@ -1,0 +1,24 @@
+@TestTask.Api_HostAddress = http://localhost:54541
+
+GET {{TestTask.Api_HostAddress}}/api/Codes
+Accept: application/json
+
+###
+POST {{TestTask.Api_HostAddress}}/api/Codes
+Content-Type: application/json
+[
+    {"1": "value1"},
+    {"5": "value2"},
+    {"10": "value32"},
+    {"12": "value12"},
+    {"431": "value461"},
+    {"554": "value3222"},
+    {"150": "value3re2"},
+    {"1332": "valuee12"},
+    {"111": "valuef1"},
+    {"53": "value2ff"},
+    {"60": "value32ea"},
+    {"42": "value1fe2"}
+]
+
+###
